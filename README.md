@@ -20,11 +20,12 @@ Before starting, make sure:
 ```bash
 apk update
 ```
+---
 # Step 2 : Install wget-ssl and ca-bundle
 ```bash
 apk add wget-ssl ca-bundle
 ```
-
+---
 # Step 3: Install Nano
 
 ```bash
