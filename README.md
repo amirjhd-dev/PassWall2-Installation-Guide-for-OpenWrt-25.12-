@@ -19,12 +19,13 @@ Before starting, make sure:
 
 ```bash
 apk update
+```
+# Step 2 : Install wget-ssl and ca-bundle
+```bash
 apk add wget-ssl ca-bundle
 ```
 
----
-
-# Step 2: Install Nano
+# Step 3: Install Nano
 
 ```bash
 apk add nano
@@ -32,7 +33,7 @@ apk add nano
 
 ---
 
-# Step 3: Install Unzip
+# Step 4: Install Unzip
 
 ```bash
 apk add unzip
@@ -40,7 +41,7 @@ apk add unzip
 
 ---
 
-# Step 4: Install Curl
+# Step 5: Install Curl
 
 ```bash
 apk add curl
@@ -48,7 +49,7 @@ apk add curl
 
 ---
 
-# Step 5: Install DNSMasq Full
+# Step 6: Install DNSMasq Full
 
 ```bash
 apk add dnsmasq-full
@@ -56,7 +57,7 @@ apk add dnsmasq-full
 
 ---
 
-# Step 6: Install TProxy Module
+# Step 7: Install TProxy Module
 
 ```bash
 apk add kmod-nft-tproxy
@@ -66,7 +67,7 @@ Required for Transparent Proxy (TProxy) mode.
 
 ---
 
-# Step 7: Install Socket Module
+# Step 8: Install Socket Module
 
 ```bash
 apk add kmod-nft-socket
@@ -76,7 +77,7 @@ Required by nftables transparent proxy rules.
 
 ---
 
-# Step 8: Find Your Device Information
+# Step 9: Find Your Device Information
 
 Display your OpenWrt platform information:
 
@@ -110,7 +111,7 @@ Use these values to replace:
 
 ---
 
-# Step 9: Configure APK Repositories
+# Step 10: Configure APK Repositories
 
 Open repository configuration:
 
@@ -149,7 +150,7 @@ CTRL + X
 
 ---
 
-# Step 10: Import Repository Key
+# Step 11: Import Repository Key
 
 ```bash
 wget -O /etc/apk/keys/apk.pub https://downloads.sourceforge.net/project/openwrt-passwall-build/apk.pub
@@ -157,7 +158,7 @@ wget -O /etc/apk/keys/apk.pub https://downloads.sourceforge.net/project/openwrt-
 
 ---
 
-# Step 11: Refresh Repository Index
+# Step 12: Refresh Repository Index
 
 ```bash
 apk update --allow-untrusted
@@ -165,7 +166,7 @@ apk update --allow-untrusted
 
 ---
 
-# Step 12: Install PassWall2
+# Step 13: Install PassWall2
 
 ```bash
 apk add luci-app-passwall2
@@ -173,7 +174,7 @@ apk add luci-app-passwall2
 
 ---
 
-# Step 13: Install Proxy Cores
+# Step 14: Install Proxy Cores
 
 ```bash
 apk add xray-core sing-box hysteria haproxy microsocks naiveproxy ip-full
