@@ -119,20 +119,6 @@ Open repository configuration:
 ```bash
 nano /etc/apk/repositories
 ```
-
-Add official OpenWrt repositories:
-
-```text
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/targets/<TARGET>/<SUBTARGET>/packages/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/packages/<ARCH>/base/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/targets/<TARGET>/<SUBTARGET>/kmods/<KERNEL_VERSION>/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/packages/<ARCH>/luci/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/packages/<ARCH>/packages/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/packages/<ARCH>/routing/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/packages/<ARCH>/telephony/packages.adb
-https://downloads.openwrt.org/releases/<OPENWRT_VERSION>/packages/<ARCH>/video/packages.adb
-```
-
 Add PassWall repositories matching your architecture:
 
 ```text
@@ -178,7 +164,7 @@ apk add luci-app-passwall2
 # Step 14: Install Proxy Cores
 
 ```bash
-apk add xray-core sing-box hysteria haproxy microsocks naiveproxy ip-full
+apk add xray-core sing-box hysteria haproxy microsocks naiveproxy ip-full kmod-tun
 ```
 
 ---
